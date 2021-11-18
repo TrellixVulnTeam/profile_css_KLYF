@@ -3,10 +3,23 @@
   text-align: center;
 }
 
+.projects__text {
+  opacity: 0;
+}
+
 .hidden {
   opacity: 0;
   transition: 0.3s ease-in;
 }
 
-.js-fadeout {
+.unhide {
+  opacity: 1;
+  transition: 0.3s ease-in;
+}
+
+.projects--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  place-items: center;
 }
