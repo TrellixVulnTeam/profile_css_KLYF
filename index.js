@@ -3,7 +3,6 @@ const fadeIn = document.querySelector('.--fadein');
 
 const fadeOutDiv = function(e){
   fadeOut.classList.add('hidden');
-  console.log('success');
 }
 
 const fadeInDiv = function(e){
