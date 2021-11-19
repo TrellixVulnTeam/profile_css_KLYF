@@ -1,0 +1,22 @@
+{
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GidBerridge/profile_css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GidBerridge/profile_css/issues"
+  },
+  "homepage": "https://github.com/GidBerridge/profile_css#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
