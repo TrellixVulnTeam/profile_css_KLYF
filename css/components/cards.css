@@ -1,6 +1,5 @@
 .projects-card {
   width: 25rem;
-  /* height: 14rem; */
   object-fit: cover;
   overflow: hidden;
   background: white;
@@ -20,11 +19,4 @@
   font-size: 1.6rem;
   font-weight: bold;
   margin: 0;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
-  place-items: center;
 }
