@@ -7,8 +7,8 @@ const fadeOutDiv = function(e){
 
 const fadeInDiv = function(e){
  
-  fadeOut.classList.add('unhide');
-  console.log('success');
+  fadeIn.classList.add('unhide');
+  console.log('success ');
 }
 
 fadeOut.addEventListener('mouseenter', fadeOutDiv);
