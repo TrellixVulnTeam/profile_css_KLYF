@@ -1,16 +1,17 @@
 const fadeOut = document.querySelector('.--fadeout');
-const fadeIn = document.querySelector('.--fadein');
+const textFade = document.querySelector('.--textFade');
 
 const fadeOutDiv = function(e){
-  fadeIn.classList.add('hidden');
+  textFade.classList.remove('unhide');
+  textFade.classList.add('hidden');
 }
 
 const fadeInDiv = function(e){
  
-  fadeIn.classList.add('unhide');
+  textFade.classList.add('unhide');
   console.log('success ');
 }
 
 
-fadeIn.addEventListener('mouseenter', fadeInDiv);
-fadeIn.addEventListener('mouseleave', fadeOutDiv);
+textFade.addEventListener('mouseenter', fadeInDiv);
+textFade.addEventListener('mouseleave', fadeOutDiv);
