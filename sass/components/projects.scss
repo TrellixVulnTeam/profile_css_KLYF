@@ -8,6 +8,15 @@
   position: absolute;
   top: 0;
   left: 0;
+  width: 25rem;
+  object-fit: cover;
+  overflow: hidden;
+  background: red;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: solid 2px #9b72aa;
+  position: relative;
+  text-align: center;
 }
 
 .projects__image {
