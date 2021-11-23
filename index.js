@@ -1,5 +1,7 @@
+
 const imgFade = document.querySelectorAll('.--imgFade');
 const textFade = document.querySelectorAll('.--textFade');
+
 
 const fadeOutText = function(e){
   textFade.classList.remove('unhide');
@@ -20,6 +22,7 @@ textFade.addEventListener('mouseleave', fadeOutText);
 
 
 
+
 // const panels = document.querySelectorAll('.panel');
 
 // function fadeOutText() {
@@ -35,3 +38,4 @@ textFade.addEventListener('mouseleave', fadeOutText);
 
 //     panels.forEach(panel => panel.addEventListener('click', toggleOpen));
 //     panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+
