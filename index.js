@@ -1,16 +1,37 @@
-const fadeOut = document.querySelector('.--fadeout');
-const fadeIn = document.querySelector('.--fadein');
+const imgFade = document.querySelectorAll('.--imgFade');
+const textFade = document.querySelectorAll('.--textFade');
 
-const fadeOutDiv = function(e){
-  fadeIn.classList.add('hidden');
+const fadeOutText = function(e){
+  textFade.classList.remove('unhide');
+  textFade.classList.add('hidden');
+  imgFade.classList.remove('hidden');
+  // imgFade.classList.add('unhide');
+  
 }
 
-const fadeInDiv = function(e){
- 
-  fadeIn.classList.add('unhide');
-  console.log('success ');
+const fadeUpText = function(e){
+  textFade.classList.add('unhide');
+  imgFade.classList.add('hidden');
+  
 }
 
+textFade.addEventListener('mouseenter', fadeUpText);
+textFade.addEventListener('mouseleave', fadeOutText);
 
-fadeIn.addEventListener('mouseenter', fadeInDiv);
-fadeIn.addEventListener('mouseleave', fadeOutDiv);
+
+
+// const panels = document.querySelectorAll('.panel');
+
+// function fadeOutText() {
+//   this.classList.toggle('hidden');
+// }
+
+// function toggleActive(e) {
+//   // console.log(e.propertyName);
+//   if(e.propertyName.includes('flex')) {
+//     this.classList.toggle('open-active');
+//   }
+// }
+
+//     panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+//     panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
