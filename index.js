@@ -31,11 +31,13 @@ textFade.addEventListener('mouseleave', fadeOutText);
 
 // function toggleActive(e) {
 //   // console.log(e.propertyName);
-//   if(e.propertyName.includes('flex')) {
-//     this.classList.toggle('open-active');
+//   if(e.propertyName.includes('Fade')) {
+//     this.classList.toggle('What is the right element here?');
 //   }
 // }
 
-//     panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+
+//     NOTpanels.forEach(panel => panel.addEventListener('click', toggleOpen));
 //     panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+
 
