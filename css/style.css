@@ -79,6 +79,16 @@
   .story__img {
     backface-visibility: hidden;
     transition: all 0.5s; }
+  .story__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 200%);
+    color: #fff;
+    opacity: 0;
+    font-size: 1rem;
+    transition: all 0.5s;
+    backface-visibility: hidden; }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -94,6 +104,9 @@
   .story:hover .story__caption {
     opacity: 1;
     transform: translate(-50%, -250%); }
+  .story:hover .story__text {
+    opacity: 1;
+    transform: translate(-50%, -20%); }
   .story:hover .story__img {
     transform: scale(0.9);
     filter: blur(3px) brightness(80%); }

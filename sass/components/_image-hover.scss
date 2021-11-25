@@ -12,6 +12,18 @@
     transition: all 0.5s;
   }
 
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 200%);
+    color: $color-white;
+    opacity: 0;
+    font-size: 1rem;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
+
   &__caption {
     position: absolute;
     top: 50%;
@@ -29,6 +41,11 @@
   &:hover &__caption {
     opacity: 1;
     transform: translate(-50%, -250%);
+  }
+
+  &:hover &__text {
+    opacity: 1;
+    transform: translate(-50%, -20%);
   }
 
   &:hover &__img {
