@@ -74,7 +74,8 @@
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 3px;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  position: relative; }
   .story__img {
     backface-visibility: hidden;
     transition: all 0.5s; }
@@ -82,7 +83,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, -500%);
     color: #fff;
     text-transform: uppercase;
     font-size: 1.7rem;
@@ -92,7 +93,7 @@
     backface-visibility: hidden; }
   .story:hover .story__caption {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -250%); }
   .story:hover .story__img {
     transform: scale(0.9);
     filter: blur(3px) brightness(80%); }
