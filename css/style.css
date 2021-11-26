@@ -44,7 +44,7 @@
     transform: scale(0.95); }
 
 .projects__card {
-  width: 25rem;
+  width: 30rem;
   object-fit: cover;
   overflow: hidden;
   background: white;
@@ -88,7 +88,8 @@
     opacity: 0;
     font-size: 1rem;
     transition: all 0.5s;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    padding: 1rem; }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -101,6 +102,9 @@
     opacity: 0;
     transition: all 0.5s;
     backface-visibility: hidden; }
+  .story h4 {
+    font-size: 1.2rem;
+    color: #7ed56f; }
   .story:hover .story__caption {
     opacity: 1;
     transform: translate(-50%, -250%); }
@@ -109,7 +113,7 @@
     transform: translate(-50%, -20%); }
   .story:hover .story__img {
     transform: scale(0.9);
-    filter: blur(3px) brightness(80%); }
+    filter: blur(3px) brightness(60%); }
 
 .navbar {
   display: flex;
