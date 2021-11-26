@@ -22,6 +22,7 @@
     font-size: 1rem;
     transition: all 0.5s;
     backface-visibility: hidden;
+    padding: 1rem;
   }
 
   &__caption {
@@ -38,6 +39,11 @@
     backface-visibility: hidden;
   }
 
+  & h4 {
+    font-size: 1.2rem;
+    color: $color-primary-light;
+  }
+
   &:hover &__caption {
     opacity: 1;
     transform: translate(-50%, -250%);
@@ -50,6 +56,6 @@
 
   &:hover &__img {
     transform: scale(0.9);
-    filter: blur(3px) brightness(80%);
+    filter: blur(3px) brightness(60%);
   }
 }
