@@ -1,4 +1,4 @@
-.story {
+.projects {
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
   background-color: rgba($color-black, 0.8);
@@ -7,36 +7,24 @@
   position: relative;
 
   &__img {
-    // transform: translateX(-4rem) scale(1);
     backface-visibility: hidden;
     transition: all 0.5s;
   }
 
   &__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 200%);
-    color: $color-white;
-    opacity: 0;
+    @include project-text;
+
     font-size: 1rem;
-    transition: all 0.5s;
-    backface-visibility: hidden;
     padding: 1rem;
+    transform: translate(-50%, 200%);
   }
 
   &__caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -500%);
-    color: $color-white;
+    @include project-text;
+
     text-transform: uppercase;
     font-size: 1.7rem;
-    text-align: center;
-    opacity: 0;
-    transition: all 0.5s;
-    backface-visibility: hidden;
+    transform: translate(-50%, -500%);
   }
 
   & h4 {
