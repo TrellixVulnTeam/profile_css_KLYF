@@ -1,6 +1,6 @@
 .slider {
-  max-width: 100rem;
-  height: 50rem;
+  max-width: 40rem;
+  height: 35rem;
   margin: 0 auto;
   position: relative;
 
@@ -12,7 +12,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  height: 50rem;
+  max-height: 30rem;
 
   display: flex;
   align-items: center;
@@ -31,17 +31,17 @@
 
 .slider__btn {
   position: absolute;
-  top: 50%;
+  top: 35%;
   z-index: 10;
 
   border: none;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.3);
   font-family: inherit;
   color: #333;
   border-radius: 50%;
-  height: 5.5rem;
-  width: 5.5rem;
-  font-size: 3.25rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  font-size: 2.25rem;
   cursor: pointer;
 }
 
