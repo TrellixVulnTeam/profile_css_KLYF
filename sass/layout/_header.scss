@@ -2,11 +2,13 @@
   display: flex;
   justify-content: space-evenly;
   margin: 1.5rem auto;
-}
 
-.nav-text {
-  color: #380b67;
-  font-family: raleway, sans-serif;
+  &__text {
+    color: #380b67;
+    font-family: raleway, sans-serif;
+    text-decoration: none !important;
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 480px) {
