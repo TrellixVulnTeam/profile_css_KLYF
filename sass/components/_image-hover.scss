@@ -1,0 +1,49 @@
+.projects {
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  background-color: rgba($color-black, 0.8);
+  border-radius: 3px;
+  font-size: $default-font-size;
+  position: relative;
+
+  &__img {
+    backface-visibility: hidden;
+    transition: all 0.5s;
+  }
+
+  &__text {
+    @include project-text;
+
+    font-size: 1rem;
+    padding: 1rem;
+    transform: translate(-50%, 200%);
+  }
+
+  &__caption {
+    @include project-text;
+
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    transform: translate(-50%, -500%);
+  }
+
+  & h4 {
+    font-size: 1.2rem;
+    color: $color-primary-light;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -250%);
+  }
+
+  &:hover &__text {
+    opacity: 1;
+    transform: translate(-50%, -20%);
+  }
+
+  &:hover &__img {
+    transform: scale(0.9);
+    filter: blur(3px) brightness(60%);
+  }
+}
