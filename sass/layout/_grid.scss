@@ -1,6 +1,14 @@
-.projects--grid {
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  grid-gap: 1.5rem;
   place-items: center;
+
+  &__title {
+    font-size: 1.5rem;
+
+    &--item {
+      font-size: 1rem;
+    }
+  }
 }

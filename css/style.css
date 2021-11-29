@@ -206,3 +206,13 @@ button:focus {
 @media screen and (min-width: 480px) {
   .navbar {
     max-width: 50%; } }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  grid-gap: 1.5rem;
+  place-items: center; }
+  .grid__title {
+    font-size: 1.5rem; }
+    .grid__title--item {
+      font-size: 1rem; }
