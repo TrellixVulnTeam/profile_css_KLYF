@@ -6,9 +6,13 @@
 
   &__title {
     font-size: 1.5rem;
+  }
 
-    &--item {
-      font-size: 1rem;
-    }
+  &__item {
+    font-size: 1rem;
+  }
+
+  img {
+    width: 2rem;
   }
 }

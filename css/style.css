@@ -214,5 +214,7 @@ button:focus {
   place-items: center; }
   .grid__title {
     font-size: 1.5rem; }
-    .grid__title--item {
-      font-size: 1rem; }
+  .grid__item {
+    font-size: 1rem; }
+  .grid img {
+    width: 2rem; }
