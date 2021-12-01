@@ -216,14 +216,13 @@ button:focus {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(6, 5rem);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5);
-  grid-gap: 1.5rem;
+  grid-gap: 0.5rem;
   place-items: center;
   margin: auto; }
   .grid__title {
-    font-size: 1.5rem;
-    grid-column: span 2; }
+    font-size: 1.5rem; }
   .grid__item {
     font-size: 1rem; }
   .grid img {
