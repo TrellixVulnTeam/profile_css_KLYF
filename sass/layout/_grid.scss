@@ -1,11 +1,14 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  grid-template-columns: repeat(6, 5rem);
+  grid-template-rows: repeat(5);
   grid-gap: 1.5rem;
   place-items: center;
+  margin: auto;
 
   &__title {
     font-size: 1.5rem;
+    grid-column: span 2;
   }
 
   &__item {
