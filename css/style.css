@@ -6,6 +6,9 @@
   opacity: 1;
   transition: 0.3s ease-in; }
 
+.row {
+  margin: 0.5rem 0rem; }
+
 .about-title {
   font-family: Raleway, Helvetica, sans-serif;
   margin: 10%; }
@@ -18,6 +21,10 @@
 
 .u-margin-top-bottom {
   margin: 10% 0; }
+
+.divider {
+  margin: 3rem 0;
+  border-bottom: 1px solid #777; }
 
 button:focus {
   outline: none !important; }
@@ -209,10 +216,16 @@ button:focus {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  grid-template-columns: repeat(6, 5rem);
+  grid-template-rows: repeat(5);
   grid-gap: 1.5rem;
-  place-items: center; }
+  place-items: center;
+  margin: auto; }
   .grid__title {
-    font-size: 1.5rem; }
-    .grid__title--item {
-      font-size: 1rem; }
+    font-size: 1.5rem;
+    grid-column: span 2; }
+  .grid__item {
+    font-size: 1rem; }
+  .grid img {
+    width: 2rem;
+    margin-right: 0.5rem; }
