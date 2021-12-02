@@ -37,7 +37,7 @@
 
 body {
   background: #263546 !important;
-  color: #eeb14e !important;
+  color: #fff !important;
   font-family: Raleway, Helvetica, sans-serif !important; }
 
 .about-title {
@@ -62,11 +62,7 @@ body {
   text-align: center; }
 
 .u-margin-top-bottom {
-  margin: 10% 0; }
-
-.divider {
-  margin: 3rem 0;
-  border-bottom: 1px solid #777; }
+  margin: 20% 0; }
 
 button:focus {
   outline: none !important; }
@@ -292,3 +288,14 @@ button:focus {
   animation-duration: 3s;
   animation-fill-mode: both;
   animation-timing-function: ease-out; }
+
+.background-light {
+  background: #eeb14e !important;
+  color: #263546 !important;
+  background-size: cover; }
+
+.unSkew {
+  transform: skewy(5deg); }
+
+.skew {
+  transform: skewy(-5deg); }
