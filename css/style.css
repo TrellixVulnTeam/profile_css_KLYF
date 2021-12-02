@@ -65,7 +65,7 @@ body {
   margin: 20% 0; }
 
 .u-clip-path-projects {
-  clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0 100%); }
+  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0 100%); }
 
 button:focus {
   outline: none !important; }
