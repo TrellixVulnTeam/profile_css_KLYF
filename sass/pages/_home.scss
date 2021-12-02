@@ -5,3 +5,41 @@
   animation-fill-mode: both;
   animation-timing-function: ease-out;
 }
+
+// .background-dark {
+//   background: $color-grey-cv !important;
+//   color: $color-orange-cv !important;
+// }
+
+.background-light {
+  background: $color-white !important;
+  color: $color-grey-cv !important;
+  background-size: cover;
+}
+
+.background-orange {
+  background: $color-orange-cv !important;
+  color: $color-grey-cv !important;
+  background-size: cover;
+}
+
+.unSkew {
+  transform: skewy(5deg);
+}
+
+.skew {
+  transform: skewy(-5deg);
+}
+
+// .section-features {
+//   padding: 20rem 0;
+//   background-image: linear-gradient(
+//       to right bottom,
+//       rgba(126, 213, 111, 0.8),
+//       rgba(40, 180, 133, 0.8)
+//     ),
+//     url(../img/nat-4.jpg);
+//   background-size: cover;
+//   transform: skewy(-7deg);
+//   margin-top: -10rem;
+// }
