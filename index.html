@@ -10,20 +10,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body style="background: rgb(254, 249, 226);">
+
     <!-- navbar -->
+    <section>
       <div class="navbar header">
         <a href="#about" class="navbar__text">About</a>
         <a href="#projects" class="navbar__text">Projects</a>
         <a href="#contact" class="navbar__text">Contact</a>
       </div>
+    </section>
 
       <div class="container d-flex justify-content-center flex-column u-center-text">
 
     <!-- Title -->
 
         <section>
-
-          <!-- <div class=""> -->
           <div class="about-title">
             <h1 style="font-size: 6rem;"><strong>Gideon Berridge</strong></h1>
             <h2 class="subheading u-center-text">Full stack web developer</h2>
@@ -32,7 +33,7 @@
         
         <!-- About -->
 
-        <section>
+        <section id="about">
           <div>
             <h3 class="mb-5">About</h3>
             <div class="d-flex justify-content-center">
@@ -52,8 +53,11 @@
                   amet
                   consectetur adipiscing elit pellentesque. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Congue
                   quisque
-                  egestas arcu. Vulputate sapien nec sagittis aliquam malesuada bibendum. Ipsum faucibus vitae aliquet nec
-                  ullamcorper.</p>
+                  egestas arcu. </p>
+                <p>
+                  <a href="./text/GideonBerridge.pdf" download="Gideon_Berridge_CV" class="projects__card--download"
+                  ><img src="./img/download_2.png" class="projects__card--download-img">Download CV</a>
+                </p>
               </div>
             </div>
           </div>
@@ -62,7 +66,7 @@
 
 
         <!-- Skills - short section thumbnails of languauge icons -->
-        <section>
+        <section id="skills">
           <div class="d-flex justify-content-center">
             <div class="grid mt-5">
     
@@ -134,9 +138,8 @@
         
 
     <!-- Projects (screenshot of refuge, video of vinyltracer-->
-        <section> 
-          
-  
+        <section id="projects"> 
+
           <!-- <div class="d-flex justify-content-center flex-column"> -->
             <h3 class="u-center-text m-5">Projects</h3>
           <!-- </div> -->
@@ -185,10 +188,16 @@
             <div class="dots"></div>
           </div>
         </section>
-    <!-- skills / tech stack (icons)-->
+        
+        <section id="contact">
+
+        </section>
 
     <!-- footer -->
-
+        <footer>
+          <div>Icons made by <a href="https://www.flaticon.com/authors/ayub-irawan" title="Ayub Irawan">Ayub Irawan</a> from <a
+              href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </footer>
 
     <script src="index.js"></script>
   </div>
