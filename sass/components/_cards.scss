@@ -9,12 +9,22 @@
   border: solid 2px #9b72aa;
   position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 
   &--text {
     // opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  &--download {
+    text-decoration: none !important;
+  }
+
+  &--download-img {
+    width: 2rem;
   }
 
   h2 {
@@ -30,5 +40,5 @@
 }
 
 .projects__image {
-  position: relative;
+  position: absolute;
 }

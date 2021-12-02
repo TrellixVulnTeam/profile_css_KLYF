@@ -63,11 +63,17 @@ button:focus {
   border-radius: 10px;
   border: solid 2px #9b72aa;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
   .projects__card--text {
     position: absolute;
     top: 0;
     left: 0; }
+  .projects__card--download {
+    text-decoration: none !important; }
+  .projects__card--download-img {
+    width: 2rem; }
   .projects__card h2 {
     font-size: 1.6rem;
     font-weight: bold;
@@ -78,7 +84,7 @@ button:focus {
   object-fit: cover; }
 
 .projects__image {
-  position: relative; }
+  position: absolute; }
 
 .projects {
   margin: 0 auto;
