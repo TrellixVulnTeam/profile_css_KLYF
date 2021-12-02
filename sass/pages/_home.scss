@@ -12,6 +12,12 @@
 // }
 
 .background-light {
+  background: $color-white !important;
+  color: $color-grey-cv !important;
+  background-size: cover;
+}
+
+.background-orange {
   background: $color-orange-cv !important;
   color: $color-grey-cv !important;
   background-size: cover;
