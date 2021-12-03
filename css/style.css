@@ -62,11 +62,14 @@ body {
 .u-center-text {
   text-align: center; }
 
-.u-margin-top-bottom {
-  margin: 20% 0; }
+.u-padding-top-bottom {
+  padding: 20vh 0; }
 
-.u-clip-path-projects {
-  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0 100%); }
+.u-clip-path-skills {
+  clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0 100%); }
+
+.u-clip-path-about {
+  clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0 90%); }
 
 button:focus {
   outline: none !important; }
@@ -102,7 +105,7 @@ button:focus {
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  border-radius: 10px !important;
   border: solid 2px #eeb14e;
   position: relative;
   text-align: center;
