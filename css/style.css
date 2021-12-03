@@ -49,6 +49,7 @@ body {
 
 .heading-primary--main {
   font-size: 6rem;
+  color: #eeb14e;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out; }
@@ -102,7 +103,7 @@ button:focus {
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  border: solid 2px #9b72aa;
+  border: solid 2px #eeb14e;
   position: relative;
   text-align: center;
   display: flex;
@@ -112,6 +113,14 @@ button:focus {
     position: absolute;
     top: 0;
     left: 0; }
+  .projects__card--about {
+    color: #eeb14e;
+    background: #263546;
+    border: solid 2px #eeb14e; }
+  .projects__card--slider {
+    color: #263546;
+    background: white;
+    border: solid 2px #eeb14e; }
   .projects__card--download {
     text-decoration: none !important; }
   .projects__card--download-img {
@@ -248,19 +257,32 @@ button:focus {
   background-color: #888;
   opacity: 1; }
 
+.header {
+  background: #263546;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  z-index: 3000; }
+
 .navbar {
   display: flex;
   justify-content: space-evenly;
-  margin: 1.5rem auto; }
+  margin: 1.5rem auto;
+  width: 70%; }
   .navbar__text {
     color: #eeb14e;
     font-family: raleway, sans-serif;
     text-decoration: none !important;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    padding: 1rem; }
 
 @media screen and (min-width: 480px) {
   .navbar {
     max-width: 50%; } }
+
+.fixed-nav {
+  position: fixed; }
 
 .grid {
   display: grid;

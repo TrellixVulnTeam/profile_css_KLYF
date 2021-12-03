@@ -1,19 +1,18 @@
     ////////////
     //  Sticky Nav
 
-    const header = document.querySelector('.header')
-    const initialCoords = header.getBoundingClientRect();
+    // const header = document.querySelector('#header');
+    // const navbar = document.querySelector('.navbar');
+    // const initialCoords = header.getBoundingClientRect();
 
-    window.addEventListener('scroll', function() {
-    // console.log(window.scrollY);
+    // window.addEventListener('scroll', function() {
+    // // console.log(window.scrollY);
 
-    if(window.scrollY > initialCoords.top) header.classList.add('sticky');
-    else navbar.classList.remove('sticky');
+    // if(window.scrollY > initialCoords.top) header.classList.add('fixed-nav');
+    // else navbar.classList.remove('fixed-nav');
 
-    });
-
-
-
+    // });    
+    
 
 //////////////////////////////////////////////
 
