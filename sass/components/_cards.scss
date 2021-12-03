@@ -1,23 +1,23 @@
 .projects__card {
-  max-width: 40rem;
-  max-height: 24rem;
-  object-fit: cover;
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  border: solid 2px #9b72aa;
-  position: relative;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  color: $color-grey-cv;
+  @include card;
 
   &--text {
     // opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  &--about {
+    color: $color-orange-cv;
+    background: $color-grey-cv;
+    border: solid 2px $color-orange-cv;
+  }
+
+  &--slider {
+    color: $color-grey-cv;
+    background: white;
+    border: solid 2px $color-orange-cv;
   }
 
   &--download {
