@@ -313,8 +313,16 @@ button:focus {
     margin-right: 0.5rem; }
 
 .footer {
-  height: 10rem;
+  height: 10vh;
   z-index: 100; }
+  .footer__text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem; }
+  .footer__icons {
+    display: flex;
+    flex-direction: column; }
 
 .fadeUp {
   animation-name: fadeUp;
@@ -330,7 +338,7 @@ button:focus {
 
 .background-orange {
   background: #eeb14e !important;
-  color: #263546 !important;
+  color: #000 !important;
   background-size: cover; }
 
 .unSkew {
