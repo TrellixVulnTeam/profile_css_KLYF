@@ -128,6 +128,8 @@ button:focus {
     text-decoration: none !important; }
   .projects__card--download-img {
     width: 2rem; }
+  .projects__card--icons {
+    color: #fff; }
   .projects__card h2 {
     font-size: 1.6rem;
     font-weight: bold;
