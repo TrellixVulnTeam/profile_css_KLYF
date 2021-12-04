@@ -14,11 +14,15 @@
   width: 70%;
 
   &__text {
-    color: $color-orange-cv;
+    color: $color-orange-cv !important;
     font-family: raleway, sans-serif;
-    text-decoration: none !important;
     font-size: 1.5rem;
     padding: 1rem;
+
+    &:hover,
+    &:active {
+      color: $color-white !important;
+    }
   }
 }
 

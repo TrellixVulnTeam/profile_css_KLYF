@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .row {
   margin: 0.5rem 0rem;
 }
@@ -6,4 +12,14 @@ body {
   background: $color-grey-cv !important;
   color: $color-white !important;
   font-family: Raleway, Helvetica, sans-serif !important;
+}
+
+a {
+  color: $color-white !important;
+  text-decoration: none !important;
+
+  &:hover,
+  &:active {
+    color: $color-orange-cv !important;
+  }
 }
