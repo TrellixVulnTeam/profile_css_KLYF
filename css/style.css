@@ -79,6 +79,9 @@ a {
 .u-padding-top-bottom {
   padding: 20vh 0; }
 
+.u-padding-top-bottom-big {
+  padding: 20vh 0 25vh 0; }
+
 .u-clip-path-skills {
   clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0 100%); }
 
@@ -291,7 +294,7 @@ button:focus {
 .navbar {
   display: flex;
   justify-content: space-evenly;
-  margin: 1.5rem auto;
+  margin: 1rem auto;
   width: 70%; }
   .navbar__text {
     color: #eeb14e !important;
@@ -319,9 +322,7 @@ button:focus {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-left: 5rem;
-  grid-gap: 0.5rem;
-  max-width: 30rem; }
+  grid-gap: 0.5rem; }
   .grid__column {
     display: flex;
     flex-direction: column; }
