@@ -306,8 +306,7 @@ button:focus {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
-  grid-template-rows: repeat(5);
+  grid-template-columns: repeat(3, 1fr);
   margin-left: 5rem;
   grid-gap: 0.5rem;
   max-width: 30rem; }
@@ -331,6 +330,12 @@ button:focus {
   .grid img {
     width: 2.5rem;
     margin-right: 0.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (max-width: 37.5em) {
+    .grid {
+      grid-template-columns: 1fr; } }
 
 .footer {
   height: 10vh;
