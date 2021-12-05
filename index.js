@@ -1,18 +1,18 @@
-    ////////////
-    //  Sticky Nav
 
-    // const header = document.querySelector('#header');
-    // const navbar = document.querySelector('.navbar');
-    // const initialCoords = header.getBoundingClientRect();
 
-    // window.addEventListener('scroll', function() {
-    // // console.log(window.scrollY);
+///////////////////////////////////////
+// Button scrolling
 
-    // if(window.scrollY > initialCoords.top) header.classList.add('fixed-nav');
-    // else navbar.classList.remove('fixed-nav');
+document.querySelector('.navbar').addEventListener('click', function (e) {
+  e.preventDefault();
+  // Matching strategy
+  if (e.target.classList.contains('navbar__text')) {
+    const id = e.target.getAttribute('href');
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+  }
+});
 
-    // });    
-    
+
 
 //////////////////////////////////////////////
 
