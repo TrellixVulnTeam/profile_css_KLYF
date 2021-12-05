@@ -5,6 +5,7 @@
   width: 100%;
   justify-content: center;
   z-index: 3000;
+  opacity: 0.9;
 }
 
 .navbar {
@@ -23,6 +24,15 @@
     &:active {
       color: $color-white !important;
     }
+    @include respond(phone) {
+      padding: 0.2rem;
+      justify-content: center;
+    }
+  }
+
+  @include respond(phone) {
+    margin: 0.5rem 0;
+    width: 100%;
   }
 }
 
