@@ -299,6 +299,14 @@ button:focus {
     padding: 1rem; }
     .navbar__text:hover, .navbar__text:active {
       color: #fff !important; }
+    @media only screen and (max-width: 37.5em) {
+      .navbar__text {
+        padding: 0.2rem;
+        justify-content: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .navbar {
+      margin: 0.5rem 0;
+      width: 100%; } }
 
 @media screen and (min-width: 480px) {
   .navbar {
