@@ -4,6 +4,10 @@
   display: grid;
   grid-template-columns: 8rem 1fr;
 
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+
   &__text {
     display: flex;
     flex-direction: column;
@@ -24,7 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 !important;
+    margin: 0.5rem 0 !important;
 
     &--items {
       width: 8rem;
@@ -32,6 +36,12 @@
 
     img {
       max-width: 3rem;
+    }
+
+    @include respond(phone) {
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding-top: 1rem;
     }
   }
 }

@@ -64,6 +64,9 @@ a {
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary--main {
+      font-size: 4.5rem; } }
 
 .heading-primary--sub {
   animation-name: moveInRight;
@@ -342,6 +345,9 @@ button:focus {
   z-index: 100;
   display: grid;
   grid-template-columns: 8rem 1fr; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      grid-template-columns: 1fr; } }
   .footer__text {
     display: flex;
     flex-direction: column;
@@ -356,11 +362,16 @@ button:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 !important; }
+    margin: 0.5rem 0 !important; }
     .footer__icons--items {
       width: 8rem; }
     .footer__icons img {
       max-width: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__icons {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 1rem; } }
 
 .fadeUp {
   animation-name: fadeUp;
