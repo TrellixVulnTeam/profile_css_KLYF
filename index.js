@@ -152,12 +152,16 @@ const slider = function(){
 
 slider();
 
-function hamburger() {
-  const x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+// ///////////////////////////////////////
+// Hamburger
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".navbar");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 }
 
