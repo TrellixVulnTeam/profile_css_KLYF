@@ -152,26 +152,12 @@ const slider = function(){
 
 slider();
 
-
-
-
-
-
-
-// const imgFade = document.querySelectorAll('.--imgFade');
-// const textFade = document.querySelectorAll('.--textFade');
-
-
-// const fadeOutText = function(e){
-//   textFade.classList.remove('unhide');
-//   textFade.classList.add('hidden');
-//   imgFade.classList.remove('hidden');
-// }
-
-// const fadeUpText = function(e){
-//   textFade.classList.add('unhide');
-//  imgFade.classList.add('hidden');
-// }
-// textFade.addEventListener('mouseenter', fadeUpText);
-// textFade.addEventListener('mouseleave', fadeOutText);
+function hamburger() {
+  const x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 

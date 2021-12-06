@@ -45,3 +45,26 @@
 .fixed-nav {
   position: fixed;
 }
+
+// hamburger
+
+/* Style the hamburger menu */
+.navbar a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04aa6d;
+  color: white;
+}
