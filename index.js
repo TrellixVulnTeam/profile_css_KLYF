@@ -16,7 +16,6 @@ document.querySelector('.navbar').addEventListener('click', function (e) {
 
 // Menu fade animation
 const handleHover = function (e) {
-  console.log('yes')
   if (e.target.classList.contains('navbar__text')) {
     const link = e.target;
     
@@ -29,6 +28,33 @@ const handleHover = function (e) {
 };
 nav.addEventListener('mouseover', handleHover.bind(0.7));
 nav.addEventListener('mouseout', handleHover.bind(1));
+
+
+//////////////////////////////////////////////
+// Reveal sections
+const allSections = document.querySelectorAll('.section');
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+    
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove('section--hidden');
+  entry.target.classList.add('fadeUp');
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  // section.classList.add('section--hidden');
+});
+
 
 //////////////////////////////////////////////
 
