@@ -2,11 +2,7 @@
   height: 10vh;
   z-index: 100;
   display: grid;
-  grid-template-columns: 8rem 1fr;
-
-  @include respond(phone) {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: 1fr;
 
   &__text {
     display: flex;
@@ -16,7 +12,7 @@
 
     &--email {
       font-size: 1.5rem;
-      margin-bottom: 1rem;
+      //   margin-bottom: 1rem;
     }
 
     &--credits {
@@ -26,9 +22,10 @@
 
   &__icons {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     margin: 0.5rem 0 !important;
+    min-width: 30%;
 
     &--items {
       width: 8rem;
