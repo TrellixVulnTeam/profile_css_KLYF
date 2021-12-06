@@ -1,7 +1,7 @@
 
-
+const nav = document.querySelector(".navbar");
 ///////////////////////////////////////
-// Button scrolling
+// Smooth scrolling
 
 document.querySelector('.navbar').addEventListener('click', function (e) {
   e.preventDefault();
@@ -12,7 +12,23 @@ document.querySelector('.navbar').addEventListener('click', function (e) {
   }
 });
 
+////////////////////////////////////////
 
+// Menu fade animation
+const handleHover = function (e) {
+  console.log('yes')
+  if (e.target.classList.contains('navbar__text')) {
+    const link = e.target;
+    
+    const siblings = link.closest('.navbar').querySelectorAll('.navbar__text');
+    siblings.forEach(el => {
+      if (el !== link) el.style.opacity = this;
+    });
+    
+  }
+};
+nav.addEventListener('mouseover', handleHover.bind(0.7));
+nav.addEventListener('mouseout', handleHover.bind(1));
 
 //////////////////////////////////////////////
 
