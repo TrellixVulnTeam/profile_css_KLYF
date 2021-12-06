@@ -17,8 +17,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  // margin: 1rem auto;
-  // width: 70%;
 
   &__text {
     color: $color-orange-cv !important;
@@ -33,9 +31,9 @@
   }
 }
 
-.fixed-nav {
-  position: fixed;
-}
+// .fixed-nav {
+//   position: fixed;
+// }
 
 // hamburger
 
@@ -57,7 +55,7 @@
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 4rem;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
@@ -68,7 +66,8 @@
   }
 
   .nav-menu.active {
-    left: 0;
+    left: 0%;
+    //   margin: 0.5rem;
   }
 
   .nav-item {
