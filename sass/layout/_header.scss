@@ -10,19 +10,20 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 1.5rem;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  position: relative;
 
   &__text {
     color: $color-orange-cv !important;
     font-family: raleway, sans-serif;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 1.5rem;
 
     &:hover,
     &:active {
@@ -31,14 +32,13 @@
   }
 }
 
-// .fixed-nav {
-//   position: fixed;
-// }
-
 // hamburger
 
 .hamburger {
   display: none;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
 }
 
 .bar {
@@ -48,7 +48,7 @@
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: $color-orange-cv;
 }
 
 @include respond(phone) {
@@ -57,17 +57,16 @@
     left: -100%;
     top: 4rem;
     flex-direction: column;
-    background-color: #fff;
+    background-color: $color-grey-cv;
     width: 100%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.2);
   }
 
   .nav-menu.active {
     left: 0%;
-    //   margin: 0.5rem;
   }
 
   .nav-item {

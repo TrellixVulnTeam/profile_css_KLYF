@@ -315,23 +315,27 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  margin-top: 1.5rem; }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem; }
+  position: relative; }
   .navbar__text {
     color: #eeb14e !important;
     font-family: raleway, sans-serif;
     font-size: 1.5rem;
-    padding: 1rem; }
+    padding: 1.5rem; }
     .navbar__text:hover, .navbar__text:active {
       color: #fff !important; }
 
 .hamburger {
-  display: none; }
+  display: none;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem; }
 
 .bar {
   display: block;
@@ -340,7 +344,7 @@ button:focus {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010; }
+  background-color: #eeb14e; }
 
 @media only screen and (max-width: 37.5em) {
   .nav-menu {
@@ -348,12 +352,12 @@ button:focus {
     left: -100%;
     top: 4rem;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #263546;
     width: 100%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); }
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.2); }
   .nav-menu.active {
     left: 0%; }
   .nav-item {
