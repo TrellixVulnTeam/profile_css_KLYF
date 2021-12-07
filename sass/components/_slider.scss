@@ -5,6 +5,10 @@
   position: relative;
   overflow: hidden;
 
+  @include respond(phone) {
+    height: 30rem;
+  }
+
   @media only screen and (max-width: 475px) {
     height: 25rem;
   }
@@ -32,7 +36,7 @@
 
 .slider__btn {
   position: absolute;
-  top: 35%;
+  top: 30%;
   z-index: 10;
 
   border: none;
@@ -44,15 +48,19 @@
   width: 2.5rem;
   font-size: 1.5rem;
   cursor: pointer;
+
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 .slider__btn--left {
-  left: 6%;
+  left: 11%;
   transform: translate(-50%, -50%);
 }
 
 .slider__btn--right {
-  right: 6%;
+  right: 11%;
   transform: translate(50%, -50%);
 }
 
@@ -84,7 +92,6 @@
 }
 
 .dots__dot--active {
-  /* background-color: #fff; */
-  background-color: #888;
+  background-color: $color-orange-cv;
   opacity: 1;
 }

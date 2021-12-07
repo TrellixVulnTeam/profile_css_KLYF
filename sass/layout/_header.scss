@@ -7,10 +7,11 @@
 }
 .nav-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: 1.5rem 0;
+  margin: auto;
   padding: 0;
+  // width: 100%;
 }
 
 .navbar {
@@ -22,14 +23,27 @@
   &__text {
     color: $color-orange-cv !important;
     font-family: raleway, sans-serif;
+    // justify-self: center;
     font-size: 1.5rem;
-    padding: 1.5rem;
+    padding: 0 1.5rem;
 
     &:hover,
     &:active {
       color: $color-white !important;
     }
+
+    &--home {
+      display: visible;
+
+      @media only screen and (max-width: 630px) {
+        display: none;
+      }
+    }
   }
+}
+
+.nav-item {
+  margin: 1rem 0;
 }
 
 // hamburger
@@ -66,10 +80,6 @@
 
   .nav-menu.active {
     left: 0%;
-  }
-
-  .nav-item {
-    margin: 2.5rem 0;
   }
 
   .hamburger {

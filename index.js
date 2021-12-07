@@ -12,6 +12,10 @@ document.querySelector('.navbar').addEventListener('click', function (e) {
   }
 });
 
+
+
+
+
 ////////////////////////////////////////
 
 // Menu fade animation
@@ -28,6 +32,9 @@ const handleHover = function (e) {
 };
 nav.addEventListener('mouseover', handleHover.bind(0.7));
 nav.addEventListener('mouseout', handleHover.bind(1));
+
+
+
 
 
 //////////////////////////////////////////////
@@ -52,8 +59,10 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 
 allSections.forEach(function (section) {
   sectionObserver.observe(section);
-  // section.classList.add('section--hidden');
 });
+
+
+
 
 
 //////////////////////////////////////////////
@@ -151,6 +160,8 @@ const slider = function(){
 };
 
 slider();
+
+
 
 // ///////////////////////////////////////
 // Hamburger
