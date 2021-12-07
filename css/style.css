@@ -139,7 +139,6 @@ button:focus {
 
 .projects__card {
   max-width: 40rem;
-  max-height: 24rem;
   object-fit: cover;
   overflow: hidden;
   background: white;
@@ -158,11 +157,14 @@ button:focus {
   .projects__card--about {
     color: #eeb14e;
     background: #263546;
-    border: solid 2px #eeb14e; }
+    border: solid 2px #eeb14e;
+    padding: 1rem; }
   .projects__card--slider {
     color: #263546;
     background: white;
-    border: solid 2px #eeb14e; }
+    border: solid 2px #eeb14e;
+    max-height: 27rem;
+    max-width: 80%; }
   .projects__card--download {
     text-decoration: none !important; }
   .projects__card--download-img {
@@ -173,6 +175,8 @@ button:focus {
     font-size: 1.6rem;
     font-weight: bold;
     padding: 1rem; }
+  .projects__card h4 {
+    color: #fff; }
 
 .projects__card > * {
   width: 100%;
@@ -230,18 +234,19 @@ button:focus {
   filter: blur(20px); }
 
 .slider {
-  max-width: 60rem;
-  height: 35rem;
+  max-width: 45rem;
+  height: 40rem;
   margin: 0 auto;
   position: relative;
-  /* IN THE END */
   overflow: hidden; }
+  @media only screen and (max-width: 475px) {
+    .slider {
+      height: 25rem; } }
 
 .slide {
   position: absolute;
   top: 0;
   width: 100%;
-  max-height: 30rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -301,7 +306,7 @@ button:focus {
 
 .dots__dot--active {
   /* background-color: #fff; */
-  background-color: #eeb14e;
+  background-color: #888;
   opacity: 1; }
 
 .header {
