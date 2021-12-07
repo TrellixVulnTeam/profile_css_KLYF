@@ -7,10 +7,10 @@
 }
 .nav-menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
+  padding: 0;
 }
 
 .navbar {
@@ -55,14 +55,13 @@
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 4rem;
+    top: 3rem;
     flex-direction: column;
-    background-color: $color-grey-cv;
+    background-color: $color-black;
     width: 100%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.2);
   }
 
   .nav-menu.active {
