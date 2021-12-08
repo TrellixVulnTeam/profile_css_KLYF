@@ -8,24 +8,18 @@
   backface-visibility: hidden;
 }
 
-// @mixin divider {
-//   margin: 3rem 0;
-//   border-bottom: 1px solid $color-grey-dark;
-// }
-
 @mixin card {
   max-width: 40rem;
-  object-fit: cover;
+  // object-fit: cover;
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px !important;
-  border: solid 2px $color-orange-cv;
+  border: solid 2px $color-orange-cv !important;
   position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
-  color: $color-grey-cv;
 }
 
 @mixin respond($breakpoint) {
