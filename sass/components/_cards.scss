@@ -10,14 +10,13 @@
   &--about {
     color: $color-orange-cv;
     background: $color-grey-cv;
-    border: solid 2px $color-orange-cv;
+
     padding: 1rem;
   }
 
   &--slider {
     color: $color-grey-cv;
     background: white;
-    border: solid 2px $color-orange-cv;
   }
 
   &--download {
@@ -45,9 +44,4 @@
 
 .projects__card > * {
   width: 100%;
-  object-fit: cover;
-}
-
-.projects__image {
-  position: absolute;
 }

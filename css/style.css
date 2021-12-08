@@ -132,17 +132,15 @@ button:focus {
 
 .projects__card {
   max-width: 40rem;
-  object-fit: cover;
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px !important;
-  border: solid 2px #eeb14e;
+  border: solid 2px #eeb14e !important;
   position: relative;
   text-align: center;
   display: flex;
-  flex-direction: column;
-  color: #263546; }
+  flex-direction: column; }
   .projects__card--text {
     position: absolute;
     top: 0;
@@ -150,12 +148,10 @@ button:focus {
   .projects__card--about {
     color: #eeb14e;
     background: #263546;
-    border: solid 2px #eeb14e;
     padding: 1rem; }
   .projects__card--slider {
     color: #263546;
-    background: white;
-    border: solid 2px #eeb14e; }
+    background: white; }
   .projects__card--download {
     text-decoration: none !important; }
   .projects__card--download-img {
@@ -170,11 +166,7 @@ button:focus {
     color: #fff; }
 
 .projects__card > * {
-  width: 100%;
-  object-fit: cover; }
-
-.projects__image {
-  position: absolute; }
+  width: 100%; }
 
 .projects {
   margin: 0 auto;
