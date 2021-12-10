@@ -349,7 +349,7 @@ button:focus {
   transition: all 0.3s ease-in-out;
   background-color: #638efb; }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 630px) {
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -376,7 +376,8 @@ button:focus {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.5rem; }
+  grid-gap: 0.5rem;
+  margin-left: 3.5rem; }
   .grid__column {
     display: flex;
     flex-direction: column; }

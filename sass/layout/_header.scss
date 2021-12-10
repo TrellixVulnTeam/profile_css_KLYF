@@ -62,7 +62,7 @@
   background-color: $color-tertiary-dark;
 }
 
-@include respond(phone) {
+@media only screen and (max-width: 630px) {
   .nav-menu {
     position: fixed;
     left: -100%;
