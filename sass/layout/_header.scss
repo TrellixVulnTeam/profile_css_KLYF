@@ -10,20 +10,17 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding: 0;
-  // width: 100%;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  // background-color: transparent;
 
   &__text {
     color: $color-orange-cv !important;
     font-family: raleway, sans-serif;
-    // justify-self: center;
     font-size: 1.5rem;
     padding: 0 1.5rem;
 
@@ -62,7 +59,7 @@
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: $color-orange-cv;
+  background-color: $color-tertiary-dark;
 }
 
 @include respond(phone) {
@@ -76,6 +73,7 @@
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
+    padding: 3rem 0;
   }
 
   .nav-menu.active {
