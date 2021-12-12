@@ -415,10 +415,10 @@ button:focus {
       grid-template-columns: 1fr; } }
 
 .footer {
-  height: 10vh;
   z-index: 100;
-  display: grid;
-  grid-template-columns: 1fr; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
   .footer__text {
     display: flex;
     flex-direction: column;
@@ -441,7 +441,7 @@ button:focus {
     align-items: center;
     justify-content: space-between;
     margin: 0.5rem 0 !important;
-    min-width: 30%; }
+    width: 100%; }
     .footer__icons--items {
       width: 8rem; }
     .footer__icons img {
@@ -451,6 +451,15 @@ button:focus {
         flex-direction: row;
         justify-content: space-evenly;
         padding-top: 1rem; } }
+
+.contact {
+  width: 100%;
+  margin: 0 auto;
+  width: 21rem; }
+  .contact__text {
+    border-bottom: 1px solid #fff;
+    padding: 0.5rem;
+    text-align: center; }
 
 .fadeUp {
   animation-name: fadeUp;
