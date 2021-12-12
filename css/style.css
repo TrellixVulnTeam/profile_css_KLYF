@@ -67,6 +67,9 @@ li {
 nav {
   padding: 0 !important; }
 
+ul {
+  padding: 0; }
+
 .heading-primary--main {
   font-size: 6rem;
   color: #eeb14e;
@@ -216,9 +219,6 @@ button:focus {
     transform: scale(0.9);
     filter: blur(3px) brightness(40%); }
 
-.lazy-img {
-  filter: blur(20px); }
-
 .slider {
   max-width: 45rem;
   height: 40rem;
@@ -260,8 +260,7 @@ button:focus {
   height: 2.5rem;
   width: 2.5rem;
   font-size: 1.5rem;
-  cursor: pointer;
-  padding-bottom: 2.5rem; }
+  cursor: pointer; }
   @media only screen and (max-width: 37.5em) {
     .slider__btn {
       display: none; } }
@@ -312,11 +311,15 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto; }
+  margin: auto;
+  padding-right: 6.5rem; }
+  @media only screen and (max-width: 775px) {
+    .nav-menu {
+      padding-right: 0; } }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between !important;
   align-items: center; }
   .navbar__text {
     color: #eeb14e !important;
@@ -326,8 +329,9 @@ button:focus {
     .navbar__text:hover, .navbar__text:active {
       color: #fff !important; }
     .navbar__text--home {
-      display: visible; }
-      @media only screen and (max-width: 630px) {
+      display: visible;
+      padding: 0 0 0 1.5rem; }
+      @media only screen and (max-width: 775px) {
         .navbar__text--home {
           display: none; } }
 
@@ -349,7 +353,7 @@ button:focus {
   transition: all 0.3s ease-in-out;
   background-color: #638efb; }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 776px) {
   .nav-menu {
     position: fixed;
     left: -100%;
