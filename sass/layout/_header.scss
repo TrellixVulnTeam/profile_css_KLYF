@@ -10,11 +10,15 @@
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding-right: 6.5rem;
+  @media only screen and (max-width: 775px) {
+    padding-right: 0;
+  }
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between !important;
   align-items: center;
   // background-color: transparent;
 
@@ -31,8 +35,9 @@
 
     &--home {
       display: visible;
+      padding: 0 0 0 1.5rem;
 
-      @media only screen and (max-width: 630px) {
+      @media only screen and (max-width: 775px) {
         display: none;
       }
     }
@@ -62,7 +67,7 @@
   background-color: $color-tertiary-dark;
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 776px) {
   .nav-menu {
     position: fixed;
     left: -100%;
