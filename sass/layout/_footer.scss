@@ -1,8 +1,8 @@
 .footer {
-  height: 10vh;
   z-index: 100;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &__text {
     display: flex;
@@ -36,7 +36,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 0.5rem 0 !important;
-    min-width: 30%;
+    width: 100%;
 
     &--items {
       width: 8rem;
@@ -51,5 +51,18 @@
       justify-content: space-evenly;
       padding-top: 1rem;
     }
+  }
+}
+
+.contact {
+  width: 100%;
+  margin: 0 auto;
+  width: 21rem;
+
+  &__text {
+    border-bottom: 1px solid $color-white;
+    padding: 0.5rem;
+
+    text-align: center;
   }
 }
