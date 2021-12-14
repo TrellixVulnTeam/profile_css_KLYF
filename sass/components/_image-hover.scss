@@ -23,13 +23,17 @@
     @include project-text;
 
     text-transform: uppercase;
-    font-size: 1.7rem;
+    font-size: 2rem;
     transform: translate(-50%, -500%);
   }
 
   & h4 {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     color: $color-primary-light;
+  }
+
+  & p {
+    font-size: 1.2rem;
   }
 
   &:hover &__caption {
