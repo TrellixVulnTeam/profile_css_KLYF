@@ -1,15 +1,15 @@
-export default function sticky() {
-    const initialCoords = header.getBoundingClientRect();
+// export default function sticky() {
+//     const initialCoords = header.getBoundingClientRect();
 
-    window.addEventListener('scroll', function() {
-    console.log(window.scrollY);
+//     window.addEventListener('scroll', function() {
+//     console.log(window.scrollY);
 
-    if(window.scrollY > initialCoords.top) navbar.classList.add('sticky');
-    else navbar.classList.remove('sticky');
+//     if(window.scrollY > initialCoords.top) navbar.classList.add('sticky');
+//     else navbar.classList.remove('sticky');
     
-    }); 
+//     }); 
     
-}
+// }
 
 
 
