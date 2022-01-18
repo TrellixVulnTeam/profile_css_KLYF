@@ -6,11 +6,11 @@
   overflow: hidden;
 
   @include respond(phone) {
-    height: 30rem;
+    height: 35rem;
   }
 
   @media only screen and (max-width: 475px) {
-    height: 25rem;
+    height: 27rem;
   }
 }
 
@@ -22,6 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   /* THIS creates the animation! */
   transition: transform 1s;
@@ -67,7 +68,7 @@
 
 .dots {
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -95,4 +96,12 @@
 .dots__dot--active {
   background-color: $color-orange-cv;
   opacity: 1;
+}
+
+.slider__icon {
+  padding: 1rem;
+
+  img {
+    height: 3rem;
+  }
 }
