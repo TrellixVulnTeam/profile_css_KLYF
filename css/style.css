@@ -95,6 +95,11 @@ ul {
   margin: auto;
   font-size: 1.5rem; }
 
+.about-sub {
+  padding: 1rem;
+  font-size: 20px;
+  color: #28b485; }
+
 .u-center-text {
   text-align: center; }
 
