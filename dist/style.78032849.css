@@ -85,10 +85,20 @@ ul {
   animation-duration: 1s;
   animation-timing-function: ease-out; }
 
+.soft-skills {
+  margin: 5rem 0 2rem 0; }
+  .soft-skills__text {
+    font-size: 1.5rem; }
+
 .projects-text {
   max-width: 80%;
   margin: auto;
   font-size: 1.5rem; }
+
+.about-sub {
+  padding: 1rem;
+  font-size: 20px;
+  color: #28b485; }
 
 .u-center-text {
   text-align: center; }
